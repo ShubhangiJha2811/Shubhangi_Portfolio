@@ -44,14 +44,6 @@ const Projects = () => {
       githubUrl: 'https://github.com/ShubhangiJha2811/Myntra_Clone'
     },
     {
-      title: 'Women Safety App',
-      description: 'Comprehensive safety app with location tracking, periodic check-ins, and auto-alerts. Integrated GPS API and notification systems for critical situation response.',
-      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Android Studio', 'Java', 'GPS API', 'Notifications'],
-      liveUrl: 'https://github.com/ShubhangiJha2811',
-      githubUrl: 'https://github.com/ShubhangiJha2811'
-    },
-    {
       title: 'Credit Card Fraud Detection',
       description: 'Real-time fraud detection application with instant alerts for suspicious transactions. Implemented detection algorithms for high-value and unusual purchases.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',

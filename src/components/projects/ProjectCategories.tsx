@@ -1,6 +1,16 @@
 import React from 'react';
 
 const ProjectCategories = () => {
+  const projectLinks: { [key: string]: string } = {
+    'ReconCraft': 'https://reconcraft-six.vercel.app/',
+    'DronAI': 'https://dron-ai-lyart.vercel.app/',
+    'Myntra Clone': 'https://myntra-clone-psi-seven.vercel.app/',
+    'Portfolio Website': 'https://github.com/ShubhangiJha2811/Shubhangi_Portfolio',
+    'StreetBase': 'https://streetbase-app.streamlit.app/',
+    'Credit Card Fraud Detection': 'https://github.com/ShubhangiJha2811',
+    'Password Fortress': 'https://password-fortress-flax.vercel.app/'
+  };
+
   const categories = [
     {
       name: 'Web Development',
@@ -22,13 +32,6 @@ const ProjectCategories = () => {
       icon: '🔒',
       color: 'from-red-500 to-orange-500',
       projects: ['Password Fortress']
-    },
-    {
-      name: 'Mobile Development',
-      count: 1,
-      icon: '📱',
-      color: 'from-green-500 to-emerald-500',
-      projects: ['Women Safety App']
     }
   ];
 
@@ -45,7 +48,7 @@ const ProjectCategories = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -71,9 +74,16 @@ const ProjectCategories = () => {
               {/* Project List */}
               <ul className="space-y-2">
                 {category.projects.map((project, idx) => (
-                  <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
+                  <li key={idx} className="flex items-center space-x-2 text-sm">
                     <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${category.color}`}></div>
-                    <span>{project}</span>
+                    <a 
+                      href={projectLinks[project]} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-purple-600 hover:underline transition-colors cursor-pointer"
+                    >
+                      {project}
+                    </a>
                   </li>
                 ))}
               </ul>
