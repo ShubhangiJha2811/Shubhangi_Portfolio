@@ -80,6 +80,10 @@ const ProjectCategories = () => {
                       href={projectLinks[project]} 
                       target="_blank" 
                       rel="noopener noreferrer"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open(projectLinks[project], '_blank', 'noopener,noreferrer');
+                      }}
                       className="text-gray-600 hover:text-purple-600 hover:underline transition-colors cursor-pointer"
                     >
                       {project}
