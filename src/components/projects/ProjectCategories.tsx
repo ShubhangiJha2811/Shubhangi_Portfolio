@@ -7,7 +7,6 @@ const ProjectCategories = () => {
     'Myntra Clone': 'https://myntra-clone-psi-seven.vercel.app/',
     'Portfolio Website': 'https://github.com/ShubhangiJha2811/Shubhangi_Portfolio',
     'StreetBase': 'https://streetbase-app.streamlit.app/',
-    'Credit Card Fraud Detection': 'https://github.com/ShubhangiJha2811',
     'Password Fortress': 'https://password-fortress-flax.vercel.app/'
   };
 
@@ -21,10 +20,10 @@ const ProjectCategories = () => {
     },
     {
       name: 'AI & Machine Learning',
-      count: 2,
+      count: 1,
       icon: '🤖',
       color: 'from-purple-500 to-pink-500',
-      projects: ['StreetBase', 'Credit Card Fraud Detection']
+      projects: ['StreetBase']
     },
     {
       name: 'Cybersecurity',

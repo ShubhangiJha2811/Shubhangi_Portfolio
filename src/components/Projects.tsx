@@ -42,14 +42,6 @@ const Projects = () => {
       technologies: ['React', 'Tailwind CSS', 'Axios', 'API Integration'],
       liveUrl: 'https://myntra-clone-psi-seven.vercel.app/',
       githubUrl: 'https://github.com/ShubhangiJha2811/Myntra_Clone'
-    },
-    {
-      title: 'Credit Card Fraud Detection',
-      description: 'Real-time fraud detection application with instant alerts for suspicious transactions. Implemented detection algorithms for high-value and unusual purchases.',
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      technologies: ['Android Studio', 'Java', 'Machine Learning', 'Firebase'],
-      liveUrl: 'https://github.com/ShubhangiJha2811',
-      githubUrl: 'https://github.com/ShubhangiJha2811'
     }
   ];
 
