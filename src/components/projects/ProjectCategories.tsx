@@ -75,14 +75,12 @@ const ProjectCategories = () => {
                 {category.projects.map((project, idx) => (
                   <li key={idx} className="flex items-center space-x-2 text-sm">
                     <div className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${category.color}`}></div>
-                    <a 
-                      href={projectLinks[project]} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-purple-600 hover:underline transition-colors cursor-pointer"
+                    <button
+                      onClick={() => window.open(projectLinks[project], '_blank', 'noopener,noreferrer')}
+                      className="text-gray-600 hover:text-purple-600 hover:underline transition-colors cursor-pointer text-left"
                     >
                       {project}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
